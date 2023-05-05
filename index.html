@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Site1</title>
+  <meta property="og:title" content="Site1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <link href="./home.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"></script>
+
+    <div class="home-container">
+      <div class="social-container social-root-class-name">
+        <span class="social-text"><span>PB</span></span>
+        <div class="social-social-bar">
+          <a href="https://github.com/PatrykBr" target="_blank" rel="noreferrer noopener" class="social-link">
+            <svg viewBox="0 0 877.7142857142857 1024" class="social-icon">
+              <path
+                d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://discord.com/users/315698903146168341" target="_blank" rel="noreferrer noopener"
+            class="social-link1">
+            <img alt="image" src="public/playground_assets/image-removebg-preview%20%5B2%5D-200h.png"
+              class="social-image" />
+          </a>
+        </div>
+      </div>
+      <nav class="home-container1">
+        <div class="home-container2">
+          <svg viewBox="0 0 950.8571428571428 1024" class="home-icon">
+            <path
+              d="M804.571 566.857v274.286c0 20-16.571 36.571-36.571 36.571h-219.429v-219.429h-146.286v219.429h-219.429c-20 0-36.571-16.571-36.571-36.571v-274.286c0-1.143 0.571-2.286 0.571-3.429l328.571-270.857 328.571 270.857c0.571 1.143 0.571 2.286 0.571 3.429zM932 527.429l-35.429 42.286c-2.857 3.429-7.429 5.714-12 6.286h-1.714c-4.571 0-8.571-1.143-12-4l-395.429-329.714-395.429 329.714c-4 2.857-8.571 4.571-13.714 4-4.571-0.571-9.143-2.857-12-6.286l-35.429-42.286c-6.286-7.429-5.143-19.429 2.286-25.714l410.857-342.286c24-20 62.857-20 86.857 0l139.429 116.571v-111.429c0-10.286 8-18.286 18.286-18.286h109.714c10.286 0 18.286 8 18.286 18.286v233.143l125.143 104c7.429 6.286 8.571 18.286 2.286 25.714z">
+            </path>
+          </svg>
+          <span class="home-text">Home</span>
+        </div>
+        <div class="home-container3">
+          <svg viewBox="0 0 1024 1024" class="home-icon2">
+            <path
+              d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM733.397 344.576c2.816-8.363 3.072-17.835 0-26.965-7.467-22.357-31.616-34.432-53.973-26.965l-271.36 90.453c-12.373 4.181-22.571 13.781-26.965 26.965l-90.453 271.36c-2.816 8.363-3.072 17.835 0 26.965 7.467 22.357 31.616 34.432 53.973 26.965l271.36-90.453c12.373-4.181 22.571-13.781 26.965-26.965zM625.451 398.549l-56.747 170.155-170.155 56.747 56.704-170.155z">
+            </path>
+          </svg>
+          <span class="home-text1">Projects</span>
+        </div>
+        <div class="home-container4">
+          <svg viewBox="0 0 1024 1024" class="home-icon4">
+            <path
+              d="M704 640c-64 64-64 128-128 128s-128-64-192-128-128-128-128-192 64-64 128-128-128-256-192-256-192 192-192 192c0 128 131.5 387.5 256 512s384 256 512 256c0 0 192-128 192-192s-192-256-256-192z">
+            </path>
+          </svg>
+          <span class="home-text2">
+            <span class="home-text3">Contact</span>
+            <br />
+          </span>
+        </div>
+      </nav>
+      <dt class="home-list-item list-item"></dt>
+      <div class="home-banner">
+        <div class="home-container5">
+          <div class="title-name-banner title-name-root-class-name">
+            <div class="title-name-code-embed">
+              <!DOCTYPE html>
+              <html lang='en'>
+
+              <head>
+                <meta charset='UTF-8' />
+                <title>CodePen - Blast.js Animation</title>
+                <meta charset='utf-8' />
+                <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+                <link rel='stylesheet'
+                  href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' />
+                <link rel='stylesheet'
+                  href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' />
+                <link rel='stylesheet' href='./components/title.css'>
+              </head>
+
+              <body>
+                <div id='page'>
+                  <div class='container home-page'>
+                    <div class='text-zone'>
+                      <h1 aria-label=' Hi, I’m patryk!' class='blast-root'>
+                        Hi, I'm patryk!
+                      </h1>
+                      <h2>Javascript/C#/Python/Lua</h2>
+                    </div>
+                  </div>
+                </div>
+                <!-- partial -->
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js'></script>
+                <script src='./script.js'></script>
+              </body>
+
+              </html>
+            </div>
+          </div>
+          <span class="home-text5">
+            <!DOCTYPE html>
+            <html lang='en'>
+
+            <head>
+              <meta charset='UTF-8' />
+              <title>CodePen - Blast.js Animation</title>
+              <meta charset='utf-8' />
+              <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+              <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' />
+              <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' />
+              <link rel='stylesheet' href='./components/title.css'>
+            </head>
+
+            <body>
+              <div id='page'>
+                <div class='container home-page'>
+                  <div class='text-zone'>
+                    <h4 aria-label='discription' class='blast-root'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                      Id donec ultrices tincidunt arcu non sodales neque. Massa ultricies mi quis hendrerit dolor magna.
+                      Id diam maecenas ultricies mi eget mauris. Vel elit scelerisque mauris pellentesque.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- partial -->
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js'></script>
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js'></script>
+              <script src='./script.js'></script>
+            </body>
+
+            </html>
+          </span>
+          <div class="home-code-embed">
+            <style>
+              .card {
+                background-color: #1e2125;
+                border-radius: 25px;
+                padding: 3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                z-index: 1;
+                color: #ffff;
+                cursor: pointer;
+              }
+
+              #avatar-container {
+                position: relative;
+                display: inline-block;
+                margin-right: 5%;
+                margin-left: 2%;
+                flex-grow: 0;
+                flex-shrink: 0;
+                z-index: 2;
+              }
+
+              #avatar-container img {
+                border-radius: 50%;
+                width: 64px;
+                height: 64px;
+                z-index: 2;
+              }
+
+              .status-circle {
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                border-radius: 50%;
+                width: 115%;
+                height: 115%;
+                z-index: -1;
+              }
+
+              .status-online {
+                background-color: #23a559;
+              }
+
+              .status-idle {
+                background-color: #f0b132;
+              }
+
+              .status-dnd {
+                background-color: #f23f42;
+              }
+
+              .status-offline {
+                background-color: #80848e;
+              }
+
+              #user-info {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 5%;
+                max-width: 70%;
+              }
+
+              #username {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+              }
+
+              #status {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+              }
+
+              #activities {
+                margin: 0;
+                padding-top: 4px;
+                list-style-type: none;
+                font-family: Arial, sans-serif;
+              }
+
+              #activities li img {
+                max-width: 25px;
+                max-height: 25px;
+                margin-right: 5px;
+              }
+
+              #activities li {
+                font-size: 0.8rem;
+                margin-bottom: 0.25rem;
+                display: flex;
+                align-items: center;
+              }
+
+              #activities li .activity-icon {
+                max-width: 50px;
+                max-height: 50px;
+                margin-right: 5px;
+                display: flex;
+                align-items: center;
+              }
+
+              #activities li .activity-name {
+                flex-grow: 1;
+              }
+
+              .time-font {
+                font-family: serif, serif;
+                font-size: 10px;
+                color: #b0b0b0;
+              }
+            </style>
+
+            <div class='card'>
+              <div id='avatar-container'>
+                <img id='avatar' src='' alt='Avatar' />
+                <div class='status-circle'></div>
+              </div>
+              <div id='user-info'>
+                <p><span id='username'></span></p>
+                <p><span id='status'></span></p>
+                <ul id='activities'></ul>
+              </div>
+            </div>
+
+            <script>
+              const card = document.querySelector('.card');
+              card.addEventListener('click', function (event) {
+                if (event.target.closest('.card')) {
+                  window.open('https://discord.com/users/315698903146168341', '_blank');
+                }
+              });
+
+              fetch('https://api.lanyard.rest/v1/users/315698903146168341')
+                .then(response => response.json())
+                .then(data => {
+                  document.getElementById('username').textContent = data.data.discord_user.username;
+                  document.getElementById('avatar').src = `https://cdn.discordapp.com/avatars/${data.data.discord_user.id}/${data.data.discord_user.avatar}.png`;
+                  const statusCircle = document.querySelector('.status-circle');
+                  switch (data.data.discord_status) {
+                    case 'online':
+                      statusCircle.classList.add('status-online');
+                      break;
+                    case 'idle':
+                      statusCircle.classList.add('status-idle');
+                      break;
+                    case 'dnd':
+                      statusCircle.classList.add('status-dnd');
+                      break;
+                    default:
+                      statusCircle.classList.add('status-offline');
+                  }
+                  const activitiesList = document.getElementById('activities');
+                  data.data.activities.forEach(activity => {
+                    const li = document.createElement('li');
+                    const activityIcon = activity.assets ? `<span class='activity-icon'><img src='https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets.large_image}.png' alt='Activity Icon'></span>` : '';
+                    const startTime = activity.timestamps ? Math.round((Date.now() - activity.timestamps.start) / 60000) + ' minutes ago' : '';
+                    li.innerHTML = `${activityIcon}<span class='activity-name'>${activity.name}<br><span class='activity-start-time'><span class='time-font'>${startTime}</span></span></span>`;
+                    activitiesList.appendChild(li);
+                  });
+                })
+                .catch(error => console.error(error));
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="home-banner1">
+        <div class="home-code-embed2">
+          <div id='repos'></div>
+
+          <style>
+            #repos {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              grid-gap: 10px;
+            }
+
+            .repo-box {
+              background-color: #1e2125;
+              color: #fff;
+              border-radius: 10px;
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 100px;
+            }
+
+            .repo-box a {
+              font-weight: bold;
+              color: #fff;
+              text-decoration: none;
+              text-align: center;
+              font-size: 32px;
+              font-family: Calibri, sans-serif
+            }
+
+            .repo-box p {
+              margin: 0;
+              font-size: 14px;
+              color: #fff;
+            }
+
+            .repo-box .language {
+              margin-bottom: 0px;
+              font-size: 19px;
+              font-weight: bold;
+              color: #fff;
+              text-align: center;
+              font-family: Calibri, sans-serif;
+            }
+
+            .repo-box .last-updated {
+              font-size: 10px;
+              color: #fff;
+              text-align: center;
+              margin-bottom: -5px;
+            }
+
+            .repo-box .stars {
+              margin-top: auto;
+              margin-bottom: -2px;
+              font-size: 18px;
+              font-weight: bold;
+              color: #fff;
+              text-align: left;
+              font-family: Calibri, sans-serif
+            }
+
+            .repo-box .forks {
+              margin-top: auto;
+              margin-bottom: -2px;
+              font-size: 18px;
+              font-weight: bold;
+              color: #fff;
+              text-align: right;
+              font-family: Calibri, sans-serif
+            }
+
+            .repo-box .stars-and-forks {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              margin-top: auto;
+              margin-bottom: 10px;
+            }
+
+            .repo-box .name-and-language {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .stars-container,
+            .forks-container {
+              display: flex;
+              align-items: center;
+              margin-bottom: -35px;
+            }
+
+            .stars-container img,
+            .forks-container img {
+              margin-left: 5px;
+              margin-right: 5px;
+            }
+          </style>
+
+          <script>
+            const reposContainer = document.getElementById('repos');
+
+            async function getRepos() {
+              try {
+                const response = await fetch('https://api.github.com/users/PatrykBr/repos');
+                const data = await response.json();
+
+                const fragment = document.createDocumentFragment();
+
+                for (const { name, html_url, stargazers_count, forks_count, language, updated_at } of data) {
+                  const repoBox = document.createElement('div');
+                  repoBox.classList.add('repo-box');
+                  repoBox.innerHTML = `
+                    <div class='name-and-language'>
+                        <a href='${html_url}' target='_blank'>${name}</a>
+                    </div>
+                    <div class='stars-and-forks'>
+                        <div class='stars-container'>
+                            <p class='stars'>${stargazers_count}</p>
+                            <img src='https://img.icons8.com/ios/FFFFFF/1200/star--v1.png' alt='Star' width='18'>
+                        </div>
+                        <div class='forks-container'>
+                            <p class='forks'>${forks_count}</p>
+                            <img src='https://img.icons8.com/ios/FFFFFF/1200/code-fork.png' alt='Fork' width='18'>
+                        </div>
+                    </div>
+                    ${language ? `<p class='language'>${language}</p>` : '‎'}
+                    <p class='last-updated'>Last updated: ${new Date(updated_at).toLocaleDateString()}</p>
+                `;
+                  fragment.appendChild(repoBox);
+                }
+
+                reposContainer.appendChild(fragment);
+              } catch (error) {
+                console.error(error);
+              }
+            }
+            getRepos();
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

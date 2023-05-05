@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
+@import url('https://fonts.googleapis.com/css?family=Exo:700,800');
+
+body {
+  /*background-color: #13691a;*/
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.home-page h1 {
+  color: #fff;
+  font-size: 53px;
+  line-height: 48px;
+  margin: 0;
+  font-family: 'Exo', sans-serif;
+  font-weight: normal;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 405px) {
+  .home-page h1 {
+    font-size: 40px;
+  }
+}
+
+.home-page h2 {
+  color: #d8be68;
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 3px;
+  -webkit-animation: myanim2 1s 2.5s backwards;
+  animation: myanim2 1s 2.5s backwards;
+
+}
+
+.home-page .blast {
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.home-page .blast:hover {
+  color: #42aad3;
+}

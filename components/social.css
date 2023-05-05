@@ -1,0 +1,100 @@
+.social-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-text {
+  color: var(--dl-color-gray-white);
+  width: auto;
+  height: auto;
+  font-size: 40px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: var(--dl-space-space-fourunits);
+  text-transform: uppercase;
+}
+.social-social-bar {
+  width: 151px;
+  height: 169px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-right: var(--dl-space-space-fourunits);
+  justify-content: center;
+}
+.social-link {
+  display: contents;
+}
+.social-icon {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+  transition: 0.3s;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+  text-decoration: none;
+}
+.social-icon:hover {
+  transition: 0.25s;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgba(89, 89, 89, 0.22);
+}
+.social-link1 {
+  display: contents;
+}
+.social-image {
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+  object-fit: cover;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+  text-decoration: none;
+}
+.social-image:hover {
+  transition: 0.25s;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgba(89, 89, 89, 0.22);
+}
+
+@media(max-width: 1200px) {
+  .social-text {
+    margin-left: var(--dl-space-space-fourunits);
+  }
+  .social-social-bar {
+    width: 149px;
+    margin-right: var(--dl-space-space-fourunits);
+  }
+  .social-icon {
+    fill: var(--dl-color-gray-white);
+  }
+  .social-image {
+    margin-right: 0px;
+  }
+  .social-root-class-name {
+    height: auto;
+    align-self: center;
+  }
+}
+@media(max-width: 991px) {
+  .social-text {
+    margin-left: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 767px) {
+  .social-social-bar {
+    width: 129px;
+    margin-left: 0px;
+  }
+}
+@media(max-width: 479px) {
+  .social-text {
+    margin-left: var(--dl-space-space-unit);
+    padding-left: 0px;
+  }
+  .social-social-bar {
+    margin-right: var(--dl-space-space-unit);
+  }
+}
