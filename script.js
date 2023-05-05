@@ -27,7 +27,7 @@ setTimeout(function () {
     $('.home-page .h1-blast').css('opacity', 1);
 }, 1500);
 
-$('.home-page .blast, .home-page .h1-blast').on('mouseenter touchstart', function () {
+$('.home-page .blast, .home-page .h1-blast').mouseenter(function () {
     var el = $(this);
 
     if (!el.hasClass('animated bounceIn')) {
@@ -54,7 +54,7 @@ setTimeout(function () {
     );
 }, 2000);
 
-$('.home-page .flat-button').on('mouseenter touchstart', function () {
+$('.home-page .flat-button').mouseenter(function () {
     var el = $(this);
 
     $(this).addClass('animated rubberBand');
@@ -67,3 +67,25 @@ $('.home-page .flat-button').on('mouseenter touchstart', function () {
         }
     );
 });
+
+
+function addRubberBandAnimation(el) {
+    el.addClass('animated rubberBand');
+    el.addClass('.home-page .blast:hover'); // add a class to change the color to blue
+    el.one(
+      'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function () {
+        el.removeClass('animated rubberBand');
+      }
+    );
+  }
+  
+  $(document).on('touchmove', function (event) {
+    var touch = event.originalEvent.touches[0];
+    var target = $(document.elementFromPoint(touch.clientX, touch.clientY));
+    if (target.hasClass('blast') || target.hasClass('h1-blast')) {
+      if (!target.hasClass('animated bounceIn')) {
+        addRubberBandAnimation(target);
+      }
+    }
+  });
