@@ -1,1 +1,1 @@
- # [Site](https://patrykbr.github.io/Site/)
+ # [Site](https://patrykbr.github.io/)
