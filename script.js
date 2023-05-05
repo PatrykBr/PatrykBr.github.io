@@ -27,7 +27,7 @@ setTimeout(function () {
     $('.home-page .h1-blast').css('opacity', 1);
 }, 1500);
 
-$('.home-page .blast, .home-page .h1-blast').mouseenter(function () {
+$('.home-page .blast, .home-page .h1-blast').on('mouseenter touchstart', function () {
     var el = $(this);
 
     if (!el.hasClass('animated bounceIn')) {
@@ -54,7 +54,7 @@ setTimeout(function () {
     );
 }, 2000);
 
-$('.home-page .flat-button').mouseenter(function () {
+$('.home-page .flat-button').on('mouseenter touchstart', function () {
     var el = $(this);
 
     $(this).addClass('animated rubberBand');
