@@ -1,0 +1,104 @@
+.discord-banner {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-right: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.discord-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-sixunits);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.discord-text {
+  color: var(--dl-color-gray-white);
+  z-index: 100;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.discord-text3 {
+  color: var(--dl-color-gray-white);
+  margin-right: var(--dl-space-space-threeunits);
+}
+.discord-code-embed {
+  width: 701px;
+  height: 124px;
+}
+@media(max-width: 1200px) {
+  .discord-banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .discord-container {
+    margin-right: 0px;
+  }
+  .discord-text {
+    color: var(--dl-color-gray-white);
+    font-weight: 600;
+  }
+  .discord-text3 {
+    color: var(--dl-color-gray-white);
+  }
+  .discord-code-embed {
+    width: 386px;
+    height: 122px;
+  }
+}
+@media(max-width: 991px) {
+  .discord-banner {
+    flex-direction: column;
+  }
+  .discord-container {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .discord-text {
+    color: var(--dl-color-gray-white);
+    font-weight: 600;
+  }
+  .discord-text3 {
+    color: var(--dl-color-gray-white);
+    text-align: center;
+    margin-left: var(--dl-space-space-threeunits);
+  }
+  .discord-code-embed {
+    width: 392px;
+    height: 124px;
+    padding-bottom: 0px;
+  }
+}
+@media(max-width: 767px) {
+  .discord-banner {
+    width: 664px;
+    margin-left: 0px;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .discord-text3 {
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+  .discord-code-embed {
+    height: 115px;
+  }
+}
+@media(max-width: 479px) {
+  .discord-banner {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .discord-code-embed {
+    width: 269px;
+    height: 94px;
+  }
+}

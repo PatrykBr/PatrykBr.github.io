@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Site1</title>
+  <meta property="og:title" content="Site1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <link href="./home.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"></script>
+
+    <div class="home-container">
+      <div class="social-container social-root-class-name">
+        <span class="social-text"><span>PB</span></span>
+        <div class="social-social-bar">
+          <a href="https://github.com/PatrykBr" target="_blank" rel="noreferrer noopener" class="social-link">
+            <svg viewBox="0 0 877.7142857142857 1024" class="social-icon">
+              <path
+                d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://discord.com/users/315698903146168341" target="_blank" rel="noreferrer noopener"
+            class="social-link1">
+            <img alt="image" src="public/playground_assets/image-removebg-preview%20%5B2%5D-200h.png"
+              class="social-image" />
+          </a>
+        </div>
+      </div>
+      <nav class="home-container1">
+        <div class="home-container2">
+          <svg viewBox="0 0 950.8571428571428 1024" class="home-icon">
+            <path
+              d="M804.571 566.857v274.286c0 20-16.571 36.571-36.571 36.571h-219.429v-219.429h-146.286v219.429h-219.429c-20 0-36.571-16.571-36.571-36.571v-274.286c0-1.143 0.571-2.286 0.571-3.429l328.571-270.857 328.571 270.857c0.571 1.143 0.571 2.286 0.571 3.429zM932 527.429l-35.429 42.286c-2.857 3.429-7.429 5.714-12 6.286h-1.714c-4.571 0-8.571-1.143-12-4l-395.429-329.714-395.429 329.714c-4 2.857-8.571 4.571-13.714 4-4.571-0.571-9.143-2.857-12-6.286l-35.429-42.286c-6.286-7.429-5.143-19.429 2.286-25.714l410.857-342.286c24-20 62.857-20 86.857 0l139.429 116.571v-111.429c0-10.286 8-18.286 18.286-18.286h109.714c10.286 0 18.286 8 18.286 18.286v233.143l125.143 104c7.429 6.286 8.571 18.286 2.286 25.714z">
+            </path>
+          </svg>
+          <span class="home-text">Home</span>
+        </div>
+        <div class="home-container3">
+          <svg viewBox="0 0 1024 1024" class="home-icon2">
+            <path
+              d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM733.397 344.576c2.816-8.363 3.072-17.835 0-26.965-7.467-22.357-31.616-34.432-53.973-26.965l-271.36 90.453c-12.373 4.181-22.571 13.781-26.965 26.965l-90.453 271.36c-2.816 8.363-3.072 17.835 0 26.965 7.467 22.357 31.616 34.432 53.973 26.965l271.36-90.453c12.373-4.181 22.571-13.781 26.965-26.965zM625.451 398.549l-56.747 170.155-170.155 56.747 56.704-170.155z">
+            </path>
+          </svg>
+          <span class="home-text1">Projects</span>
+        </div>
+        <div class="home-container4">
+          <svg viewBox="0 0 1024 1024" class="home-icon4">
+            <path
+              d="M704 640c-64 64-64 128-128 128s-128-64-192-128-128-128-128-192 64-64 128-128-128-256-192-256-192 192-192 192c0 128 131.5 387.5 256 512s384 256 512 256c0 0 192-128 192-192s-192-256-256-192z">
+            </path>
+          </svg>
+          <span class="home-text2">
+            <span class="home-text3">Contact</span>
+            <br />
+          </span>
+        </div>
+      </nav>
+      <dt class="home-list-item list-item"></dt>
+      <div class="home-banner">
+        <div class="home-container5">
+          <div class="title-name-banner title-name-root-class-name">
+            <div class="title-name-code-embed">
+              <!DOCTYPE html>
+              <html lang='en'>
+
+              <head>
+                <meta charset='UTF-8'>
+                <title>CodePen - Blast.js Animation</title>
+                <meta charset='utf-8'>
+                <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+                <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+                <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+                <!--<link rel='stylesheet' href='./style.css'>-->
+              </head>
+
+              <body>
+                <div id='page'>
+                  <div class='container home-page'>
+
+                    <div class='text-zone'>
+                      <h1 aria-label=' Hi, I’m patryk!' class='blast-root'>
+                        Hi, I'm patryk!
+                      </h1>
+                      <h2>Javascript/C#/Python/Lua</h2>
+                    </div>
+                  </div>
+                </div>
+                <!-- partial -->
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js'></script>
+                <!--<script src='./script.js'></script>-->
+              </body>
+
+              </html>
+
+              <style>
+                @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
+                @import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
+                @import url('https://fonts.googleapis.com/css?family=Exo:700,800');
+
+                body {
+                  /*background-color: #13691a;*/
+                  font-family: 'Titillium Web', sans-serif;
+                }
+
+                .home-page h1 {
+                  color: #fff;
+                  font-size: 53px;
+                  line-height: 48px;
+                  margin: 0;
+                  font-family: 'Exo', sans-serif;
+                  font-weight: normal;
+                  text-align: center;
+
+                }
+
+                @media screen and (max-width: 405px) {
+                  .home-page h1 {
+                    font-size: 40px;
+                  }
+                }
+
+                .home-page h2 {
+                  color: #d8be68;
+                  margin-top: 9px;
+                  font-weight: 400;
+                  font-size: 11px;
+                  text-align: center;
+                  font-family: 'Titillium Web', sans-serif;
+                  letter-spacing: 3px;
+                  -webkit-animation: myanim2 1s 2.5s backwards;
+                  animation: myanim2 1s 2.5s backwards;
+
+                }
+
+                .home-page .blast {
+                  opacity: 0;
+                  display: inline-block;
+                  -webkit-transition: all 0.3s ease-out;
+                  transition: all 0.3s ease-out;
+                }
+
+                .home-page .blast:hover {
+                  color: #42aad3;
+                }
+              </style>
+
+              <script>
+                !function ($, e, t, a) { var r = function () { if (t.documentMode) return t.documentMode; for (var e = 7; e > 0; e--) { var r = t.createElement("div"); if (r.innerHTML = "<!--[if IE " + e + "]><span></span><![endif]-->", r.getElementsByTagName("span").length) return r = null, e; r = null } return a }(), n = e.console || { log: function () { }, time: function () { } }, i = "blast", s = { latinPunctuation: "â€“â€”â€²â€™'â€œâ€³â€ž\"(Â«.â€¦Â¡Â¿â€²â€™'â€â€³â€œ\")Â».â€¦!?", latinLetters: "\\u0041-\\u005A\\u0061-\\u007A\\u00C0-\\u017F\\u0100-\\u01FF\\u0180-\\u027F" }, l = { abbreviations: new RegExp("[^" + s.latinLetters + "](e\\.g\\.)|(i\\.e\\.)|(mr\\.)|(mrs\\.)|(ms\\.)|(dr\\.)|(prof\\.)|(esq\\.)|(sr\\.)|(jr\\.)[^" + s.latinLetters + "]", "ig"), innerWordPeriod: new RegExp("[" + s.latinLetters + "].[" + s.latinLetters + "]", "ig"), onlyContainsPunctuation: new RegExp("[^" + s.latinPunctuation + "]"), adjoinedPunctuation: new RegExp("^[" + s.latinPunctuation + "]+|[" + s.latinPunctuation + "]+$", "g"), skippedElements: /(script|style|select|textarea)/i, hasPluginClass: new RegExp("(^| )" + i + "( |$)", "gi") }; $.fn[i] = function (d) { function o(e) { return e.replace(l.abbreviations, function (e) { return e.replace(/\./g, "{{46}}") }).replace(l.innerWordPeriod, function (e) { return e.replace(/\./g, "{{46}}") }) } function c(e) { return e.replace(/{{(\d{1,3})}}/g, function (e, t) { return String.fromCharCode(t) }) } function u(e, a) { var r = t.createElement(a.tag); if (r.className = i, a.customClass && (r.className += " " + a.customClass, a.generateIndexID && (r.id = a.customClass + "-" + f.blastedIndex)), "all" === a.delimiter && /\s/.test(e.data) && (r.style.whiteSpace = "pre-line"), a.generateValueClass === !0 && !a.search && ("character" === a.delimiter || "word" === a.delimiter)) { var n, s = e.data; "word" === a.delimiter && l.onlyContainsPunctuation.test(s) && (s = s.replace(l.adjoinedPunctuation, "")), n = i + "-" + a.delimiter.toLowerCase() + "-" + s.toLowerCase(), r.className += " " + n } return a.aria && r.setAttribute("aria-hidden", "true"), r.appendChild(e.cloneNode(!1)), r } function g(e, t) { var a = -1, r = 0; if (3 === e.nodeType && e.data.length) { if (f.nodeBeginning && (e.data = t.search || "sentence" !== t.delimiter ? c(e.data) : o(e.data), f.nodeBeginning = !1), a = e.data.search(h), -1 !== a) { var n = e.data.match(h), i = n[0], s = n[1] || !1; "" === i ? a++ : s && s !== i && (a += i.indexOf(s), i = s); var d = e.splitText(a); d.splitText(i.length), r = 1, t.search || "sentence" !== t.delimiter || (d.data = c(d.data)); var p = u(d, t, f.blastedIndex); d.parentNode.replaceChild(p, d), f.wrappers.push(p), f.blastedIndex++ } } else if (1 === e.nodeType && e.hasChildNodes() && !l.skippedElements.test(e.tagName) && !l.hasPluginClass.test(e.className)) for (var m = 0; m < e.childNodes.length; m++)f.nodeBeginning = !0, m += g(e.childNodes[m], t); return r } function p(t, s) { s.debug && n.time("blast reversal"); var l = !1; t.removeClass(i + "-root").removeAttr("aria-label").find("." + i).each(function () { var e = $(this); if (e.closest("." + i + "-root").length) l = !0; else { var t = this.parentNode; 7 >= r && t.firstChild.nodeName, t.replaceChild(this.firstChild, this), t.normalize() } }), e.Zepto ? t.data(i, a) : t.removeData(i), s.debug && (n.log(i + ": Reversed Blast" + (t.attr("id") ? " on #" + t.attr("id") + "." : ".") + (l ? " Skipped reversal on the children of one or more descendant root elements." : "")), n.timeEnd("blast reversal")) } var m = $.extend({}, $.fn[i].defaults, d), h, f = {}; if (m.search.length && ("string" == typeof m.search || /^\d/.test(parseFloat(m.search)))) m.delimiter = m.search.toString().replace(/[-[\]{,}(.)*+?|^$\\\/]/g, "\\$&"), h = new RegExp("(?:^|[^-" + s.latinLetters + "])(" + m.delimiter + "('s)?)(?![-" + s.latinLetters + "])", "i"); else switch ("string" == typeof m.delimiter && (m.delimiter = m.delimiter.toLowerCase()), m.delimiter) { case "all": h = /(.)/; break; case "letter": case "char": case "character": h = /(\S)/; break; case "word": h = /\s*(\S+)\s*/; break; case "sentence": h = /(?=\S)(([.]{2,})?[^!?]+?([.â€¦!?]+|(?=\s+$)|$)(\s*[â€²â€™'â€â€³â€œ")Â»]+)*)/; break; case "element": h = /(?=\S)([\S\s]*\S)/; break; default: if (!(m.delimiter instanceof RegExp)) return n.log(i + ": Unrecognized delimiter, empty search string, or invalid custom Regex. Aborting."), !0; h = m.delimiter }if (this.each(function () { var e = $(this), r = e.text(); if (d !== !1) { f = { blastedIndex: 0, nodeBeginning: !1, wrappers: f.wrappers || [] }, e.data(i) === a || "search" === e.data(i) && m.search !== !1 || (p(e, m), m.debug && n.log(i + ": Removed element's existing Blast call.")), e.data(i, m.search !== !1 ? "search" : m.delimiter), m.aria && e.attr("aria-label", r), m.stripHTMLTags && e.html(r); try { t.createElement(m.tag) } catch (s) { m.tag = "span", m.debug && n.log(i + ": Invalid tag supplied. Defaulting to span.") } e.addClass(i + "-root"), m.debug && n.time(i), g(this, m), m.debug && n.timeEnd(i) } else d === !1 && e.data(i) !== a && p(e, m); m.debug && $.each(f.wrappers, function (e, t) { n.log(i + " [" + m.delimiter + "] " + this.outerHTML), this.style.backgroundColor = e % 2 ? "#f12185" : "#075d9a" }) }), d !== !1 && m.returnGenerated === !0) { var b = $().add(f.wrappers); return b.prevObject = this, b.context = this.context, b } return this }, $.fn.blast.defaults = { returnGenerated: !0, delimiter: "word", tag: "span", search: !1, customClass: "", generateIndexID: !1, generateValueClass: !1, stripHTMLTags: !1, aria: !0, debug: !1 } }(window.jQuery || window.Zepto, window, document);
+
+                $('#nav_bar nav a').removeClass('active');
+                $('.home-link').addClass('active');
+
+                $('.home-page h1').blast({
+                  delimiter: 'character',
+                  tag: 'span'
+                });
+
+                a = 0;
+                $('.home-page .blast').each(function () {
+                  if (a == 300) {
+                    a = 400;
+                  }
+
+                  if (a == 1200) {
+                    a = 1400;
+                  }
+
+                  var el = $(this);
+
+                  if (a == 400) {
+                    setTimeout(function () {
+                      $('.home-page h1 img').addClass('animated rotateIn');
+                    }, 500);
+                  }
+
+                  setTimeout(function () {
+                    el.addClass('animated bounceIn');
+                  }, a);
+
+                  if (a < 1200) {
+                    a = a + 100;
+                  } else {
+                    a = a + 70;
+                  }
+                });
+                setTimeout(function () {
+                  $('.home-page .blast').removeClass('animated bounceIn');
+                  $('.home-page .blast').css('opacity', 1);
+
+                  $('.home-page .blast').mouseenter(function () {
+                    var el = $(this);
+
+                    $(this).addClass('animated rubberBand');
+                    $(
+                      this
+                    ).one(
+                      'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                      function () {
+                        el.removeClass('animated rubberBand');
+                      }
+                    );
+                  });
+                }, 3000);
+
+                setTimeout(function () {
+                  $('.home-page .flat-button').addClass('animated bounceIn');
+                  $(
+                    '.home-page .flat-button'
+                  ).one(
+                    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function () {
+                      $('.home-page .flat-button').removeClass('animated bounceIn');
+                      $('.home-page .flat-button').css('opacity', 1);
+                    }
+                  );
+                }, 2000);
+
+                $('.home-page .flat-button').mouseenter(function () {
+                  var el = $(this);
+
+                  $(this).addClass('animated rubberBand');
+                  $(
+                    this
+                  ).one(
+                    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function () {
+                      el.removeClass('animated rubberBand');
+                    }
+                  );
+                });
+              </script>
+
+            </div>
+          </div>
+          <span class="home-text5">
+            <span>
+              rutrum mi ut rhoncus. Integer in dignissim tortor, id egestas
+              ante. Proin at enim purus. Mauris ut felis nisi.
+            </span>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              volutpat turpis, ut tincidunt lectus. Mauris luctusg
+            </span>
+          </span>
+          <div class="home-code-embed">
+            <dangerous-html html="<style>
+    .card {
+        background-color: #1e2125;
+        border-radius: 25px;
+        padding: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        z-index: 1;
+        color: #ffff;
+        cursor: pointer;
+    }
+
+    #avatar-container {
+        position: relative;
+        display: inline-block;
+        margin-right: 5%;
+        margin-left: 2%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        z-index: 2;
+    }
+
+    #avatar-container img {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        z-index: 2;
+    }
+
+    .status-circle {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border-radius: 50%;
+        width: 115%;
+        height: 115%;
+        z-index: -1;
+    }
+
+    .status-online {
+        background-color: #23a559;
+    }
+
+    .status-idle {
+        background-color: #f0b132;
+    }
+
+    .status-dnd {
+        background-color: #f23f42;
+    }
+
+    .status-offline {
+        background-color: #80848e;
+    }
+
+    #user-info {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+        max-width: 70%;
+    }
+
+    #username {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    #status {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #activities {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #activities li img {
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 5px;
+    }
+
+    #activities li {
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+    }
+
+    #activities li .activity-icon {
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    #activities li .activity-name {
+        flex-grow: 1;
+    }
+</style>
+
+<div class='card'>
+    <div id='avatar-container'>
+        <img id='avatar' src='' alt='Avatar' />
+        <div class='status-circle'></div>
+    </div>
+    <div id='user-info'>
+        <p><span id='username'></span></p>
+        <p><span id='status'></span></p>
+        <ul id='activities'></ul>
+    </div>
+</div>
+
+<script>
+    const card = document.querySelector('.card');
+  card.addEventListener('click', function (event) {
+      if (event.target.closest('.card')) {
+          window.open('https://discord.com/users/315698903146168341', '_blank');
+      }
+  });
+
+  fetch('https://api.lanyard.rest/v1/users/315698903146168341')
+      .then(response => response.json())
+      .then(data => {
+          document.getElementById('username').textContent = data.data.discord_user.username;
+          document.getElementById('status').textContent = data.data.discord_status;
+          document.getElementById('avatar').src = `https://cdn.discordapp.com/avatars/${data.data.discord_user.id}/${data.data.discord_user.avatar}.png`;
+          const statusCircle = document.querySelector('.status-circle');
+          switch (data.data.discord_status) {
+              case 'online':
+                  statusCircle.classList.add('status-online');
+                  break;
+              case 'idle':
+                  statusCircle.classList.add('status-idle');
+                  break;
+              case 'dnd':
+                  statusCircle.classList.add('status-dnd');
+                  break;
+              default:
+                  statusCircle.classList.add('status-offline');
+          }
+          const activitiesList = document.getElementById('activities');
+          data.data.activities.forEach(activity => {
+              const li = document.createElement('li');
+              const activityIcon = activity.assets ? `<span class='activity-icon'><img src='https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets.large_image}.png' alt='Activity Icon'></span>` : '';
+              const startTime = activity.timestamps ? Math.round((Date.now() - activity.timestamps.start) / 60000) + ' minutes ago' : '';
+              li.innerHTML = `${activityIcon}<span class='activity-name'>${activity.name}</span><span class='activity-start-time'>${startTime}</span>`;
+              activitiesList.appendChild(li);
+          });
+      })
+      .catch(error => console.error(error));
+</script>"></dangerous-html>
+          </div>
+        </div>
+      </div>
+      <div class="home-banner1">
+        <div class="home-code-embed2">
+          <dangerous-html html="<div id='repos'></div>
+
+<style>
+    #repos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .repo-box {
+        background-color: #1e2125;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    .repo-box a {
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 32px;
+        font-family: Calibri, sans-serif
+    }
+
+    .repo-box p {
+        margin: 0;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .repo-box .language {
+        margin-bottom: 0px;
+        font-size: 19px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        font-family: Calibri, sans-serif;
+    }
+
+    .repo-box .last-updated {
+        font-size: 10px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: -5px;
+    }
+
+    .repo-box .stars {
+        margin-top: auto;
+        margin-bottom: -2px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-align: left;
+        font-family: Calibri, sans-serif
+    }
+
+    .repo-box .forks {
+        margin-top: auto;
+        margin-bottom: -2px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-align: right;
+        font-family: Calibri, sans-serif
+    }
+
+    .repo-box .stars-and-forks {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .repo-box .name-and-language {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stars-container,
+    .forks-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: -35px;
+    }
+
+    .stars-container img,
+    .forks-container img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+</style>
+
+<script>
+    const reposContainer = document.getElementById('repos');
+
+    async function getRepos() {
+        try {
+            const response = await fetch('https://api.github.com/users/PatrykBr/repos');
+            const data = await response.json();
+
+            const fragment = document.createDocumentFragment();
+
+            for (const { name, html_url, stargazers_count, forks_count, language = 'N/A', updated_at } of data) {
+                const repoBox = document.createElement('div');
+                repoBox.classList.add('repo-box');
+                repoBox.innerHTML = `
+                    <div class='name-and-language'>
+                        <a href='${html_url}' target='_blank'>${name}</a>
+                    </div>
+                    <div class='stars-and-forks'>
+                        <div class='stars-container'>
+                            <p class='stars'>${stargazers_count}</p>
+                            <img src='https://img.icons8.com/ios/FFFFFF/1200/star--v1.png' alt='Star' width='18'>
+                        </div>
+                        <div class='forks-container'>
+                            <p class='forks'>${forks_count}</p>
+                            <img src='https://img.icons8.com/ios/FFFFFF/1200/code-fork.png' alt='Fork' width='18'>
+                        </div>
+                    </div>
+                    <p class='language'>${language}</p>
+                    <p class='last-updated'>Last updated: ${new Date(updated_at).toLocaleDateString()}</p>
+                `;
+                fragment.appendChild(repoBox);
+            }
+
+            reposContainer.appendChild(fragment);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    getRepos();
+</script>
+"></dangerous-html>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

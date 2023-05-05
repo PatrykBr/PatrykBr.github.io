@@ -1,0 +1,175 @@
+<div>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+  ></script>
+  <link href="./discord.css" rel="stylesheet" />
+  <div class="discord-banner">
+    <div class="discord-container">
+      <h1 class="discord-text">
+        <span>Be the first to get the latest</span>
+        <span>features</span>
+      </h1>
+      <span class="discord-text3">
+        <span>
+          rutrum mi ut rhoncus. Integer in dignissim tortor, id egestas ante.
+          Proin at enim purus. Mauris ut felis nisi.
+        </span>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+          volutpat turpis, ut tincidunt lectus. Mauris luctus
+        </span>
+        <span></span>
+      </span>
+    </div>
+    <div class="discord-code-embed">
+      <dangerous-html
+        html="<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            color: white;
+            padding: 3%;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: #1e2125;
+            border-radius: 25px;
+            padding: 3%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            z-index: 1;
+        }
+
+        #avatar-container {
+            position: relative;
+            display: inline-block;
+            margin-right: 5%;
+            z-index: 2;
+        }
+
+        #avatar-container img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .status-circle {
+            position: absolute;
+            bottom: -5%;
+            border-radius: 50%;
+            right: -5%;
+            width: 110%;
+            height: 110%;
+            z-index: -1;
+        }
+
+        .status-online {
+            background-color: #23a559;
+        }
+
+        .status-idle {
+            background-color: #f0b132;
+        }
+
+        .status-dnd {
+            background-color: #f23f42;
+        }
+
+        .status-offline {
+            background-color: #80848e;
+        }
+
+        #user-info {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5%;
+        }
+
+        #username {
+            font-size: 6vw;
+            font-weight: bold;
+            margin-bottom: 3vw;
+        }
+
+        #status {
+            font-size: 4vw;
+            margin-bottom: 4vw;
+        }
+
+        #activities {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        #activities li {
+            font-size: 3vw;
+            margin-bottom: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='card'>
+        <div id='avatar-container'>
+            <img id='avatar' src='' alt='Avatar' />
+            <div class='status-circle'></div>
+        </div>
+        <div id='user-info'>
+            <p><span id='username'></span></p>
+            <p><span id='status'></span></p>
+            <ul id='activities'></ul>
+        </div>
+    </div>
+
+    <script>
+
+        document.addEventListener('click', function () {
+            window.open('https://discord.com/users/606840894317920270', '_blank');
+        });
+
+        fetch('https://api.lanyard.rest/v1/users/606840894317920270')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('username').textContent = data.data.discord_user.username;
+                document.getElementById('status').textContent = data.data.discord_status;
+                document.getElementById('avatar').src = `https://cdn.discordapp.com/avatars/${data.data.discord_user.id}/${data.data.discord_user.avatar}.png`;
+                const statusCircle = document.querySelector('.status-circle');
+                switch (data.data.discord_status) {
+                    case 'online':
+                        statusCircle.classList.add('status-online');
+                        break;
+                    case 'idle':
+                        statusCircle.classList.add('status-idle');
+                        break;
+                    case 'dnd':
+                        statusCircle.classList.add('status-dnd');
+                        break;
+                    default:
+                        statusCircle.classList.add('status-offline');
+                }
+                const activitiesList = document.getElementById('activities');
+                data.data.activities.forEach(activity => {
+                    const li = document.createElement('li');
+                    const activityIcon = activity.assets ? `<img src='https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets.large_image}.png' alt='Activity Icon'>` : '';
+                    const startTime = activity.timestamps ? Math.round((Date.now() - activity.timestamps.start) / 60000) + ' minutes ago' : '';
+                    li.innerHTML = ` ${activity.name}  ${activityIcon} | Start Time: ${startTime} `;
+                    activitiesList.appendChild(li);
+                });
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+
+</html>"
+      ></dangerous-html>
+    </div>
+  </div>
+</div>
