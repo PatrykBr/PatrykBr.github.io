@@ -2,10 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore");
 @import url("https://fonts.googleapis.com/css?family=Exo:700,800");
 
+:root {
+  --container-margin: 80px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  margin-left: var(--container-margin);
+  margin-right: var(--container-margin);
   background-color: #2b3237;
 }
 
@@ -21,29 +27,25 @@ h3 {
   font-size: 11px;
   margin-left: 85px;
   font-weight: 400;
-  margin-top: -10px;
+  margin-top: -20px;
   margin-bottom: 30px;
   letter-spacing: 3px;
 }
 
 #logoContainer {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 #pbLogo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  font-size: 40px;
 }
 
 .logo-container {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .logo {
@@ -54,26 +56,24 @@ h3 {
 }
 
 #contentContainer {
-  margin-top: 140px;
+  margin-top: 50px;
 }
 
 .text-container {
-  margin-bottom: -30px;
-  padding-left: 20px;
-  width: 385px;
+  padding-bottom: 20px;
 }
 
 .left-container,
 .right-container {
   height: 300px;
   color: #ffffff;
-  padding: 20px;
   box-sizing: border-box;
 }
 
 .left-container {
   width: 55%;
   float: left;
+  padding-right: 20px;
 }
 
 .right-container {
@@ -82,11 +82,26 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  h3 {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .text-container {
+    text-align: center;
+  }
+
   .left-container,
   .right-container {
     height: 200px;
     width: 100%;
     float: none;
+  }
+  .left-container {
+    padding-right: 0px;
+  }
+
+  :root {
+    --container-margin: 10px;
   }
 }
 

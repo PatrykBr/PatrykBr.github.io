@@ -3,6 +3,11 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 10px;
 }
+@media (max-width: 768px) {
+  #repos {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
 
 .repo-box {
   background-color: #1e2125;
