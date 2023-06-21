@@ -1,0 +1,95 @@
+#repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.repo-box {
+  background-color: #1e2125;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.repo-box a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: calc(3vw + 12px);
+  font-size: clamp(16px, calc(1.5vw + 14px), 39px);
+  font-family: Calibri, sans-serif;
+}
+
+.repo-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.repo-box .language {
+  margin-bottom: 0px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-family: Calibri, sans-serif;
+}
+
+.repo-box .last-updated {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+.repo-box .stars {
+  margin-top: auto;
+  margin-bottom: -2px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  font-family: Calibri, sans-serif;
+}
+
+.repo-box .forks {
+  margin-top: auto;
+  margin-bottom: -2px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: right;
+  font-family: Calibri, sans-serif;
+}
+
+.repo-box .stars-and-forks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.repo-box .name-and-language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars-container,
+.forks-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: -35px;
+}
+
+.stars-container img,
+.forks-container img {
+  margin-left: 5px;
+  margin-right: 5px;
+}

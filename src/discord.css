@@ -1,0 +1,103 @@
+.card {
+  background-color: #1e2125;
+  border-radius: 25px;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #ffff;
+  cursor: pointer;
+}
+
+#avatar-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+#avatar-container img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  z-index: 2;
+}
+
+.status-circle {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  width: 115%;
+  height: 115%;
+  z-index: -1;
+}
+
+.status-online {
+  background-color: #23a559;
+}
+
+.status-idle {
+  background-color: #f0b132;
+}
+
+.status-dnd {
+  background-color: #f23f42;
+}
+
+.status-offline {
+  background-color: #80848e;
+}
+
+#user-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+  max-width: 70%;
+}
+
+#username {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#status {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#activities {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#activities li img {
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 5px;
+}
+
+#activities li {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+#activities li .activity-icon {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#activities li .activity-name {
+  flex-grow: 1;
+}

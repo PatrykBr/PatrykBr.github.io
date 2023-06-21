@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore");
+@import url("https://fonts.googleapis.com/css?family=Exo:700,800");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #2b3237;
+}
+
+h1,
+p {
+  font-family: "Exo", sans-serif;
+  color: #ffffff;
+}
+
+h3 {
+  color: #d8be68;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 11px;
+  margin-left: 85px;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+#logoContainer {
+  position: relative;
+}
+
+#pbLogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  display: block;
+  margin-left: 40px;
+  width: 60px;
+  height: auto;
+}
+
+#contentContainer {
+  margin-top: 140px;
+}
+
+.text-container {
+  margin-bottom: -30px;
+  padding-left: 20px;
+  width: 385px;
+}
+
+.left-container,
+.right-container {
+  height: 300px;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-container {
+  width: 55%;
+  float: left;
+}
+
+.right-container {
+  width: 45%;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .left-container,
+  .right-container {
+    height: 200px;
+    width: 100%;
+    float: none;
+  }
+}
+
+#GithubContainer {
+  padding: 20px;
+  color: #ffffff;
+  height: 300px;
+}
+
+body ::selection {
+  background: #d8be68;
+}
+
+.MovingText .blast {
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.MovingText .blast:hover {
+  color: #68b4d8;
+}
